@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace Hotel
 {
@@ -38,7 +39,12 @@ namespace Hotel
 
         private void Button_login_Click(object sender, EventArgs e)
         {
-           
+            DataTable table = new DataTable();
+            MySqlDataAdapter adapter = new MySqlDataAdapter();
+            string selectquery = "SELECT * FROM `users` WHERE `username` = @usn AND `password` = @pass;";
+            MySqlCommand command = new MySqlCommand(selectquery,connect.GetConnection());
+            adapter.SelectCommand = command;
+            adapter.Fill(table);
         }
     }
 }

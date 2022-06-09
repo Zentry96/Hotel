@@ -9,23 +9,24 @@ namespace Hotel
     class DBconnect
     {
         private MySqlConnection connection = new MySqlConnection("datasource=localhost;port=3306;username=root;password=;database=hotel_data");
-    }
+
         public MySqlConnection GetConnection()
         {
-        return connection;
+            return connection;
         }
-    public void OpenCon()
-    {
-        if (connection.State == System.Data.ConnectionState.Closed)
+        public void OpenCon()
         {
-            connection.open();
+            if (connection.State == System.Data.ConnectionState.Closed)
+            {
+                connection.Open();
+            }
         }
-    }
-    public void CloseCon()
-    {
-        if (connection.State == System.Data.ConnectionState.Open)
+        public void CloseCon()
         {
-            connection.Close();
+            if (connection.State == System.Data.ConnectionState.Open)
+            {
+                connection.Close();
+            }
         }
     }
 }
