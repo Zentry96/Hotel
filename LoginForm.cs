@@ -43,8 +43,20 @@ namespace Hotel
             MySqlDataAdapter adapter = new MySqlDataAdapter();
             string selectquery = "SELECT * FROM `users` WHERE `username` = @usn AND `password` = @pass;";
             MySqlCommand command = new MySqlCommand(selectquery,connect.GetConnection());
+            command.Parameters.Add("@usn", MySqlDbType.VarChar).Value = TextBox_username.Text;
+            command.Parameters.Add("@pass", MySqlDbType.VarChar).Value = TextBox_password.Text;
             adapter.SelectCommand = command;
             adapter.Fill(table);
+
+            
+            if (table.Rows.Count > 0)
+            {
+                MessageBox.Show("Da");
+            }
+            else
+            {
+                MessageBox.Show("Ne");
+            }
         }
     }
 }
