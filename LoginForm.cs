@@ -13,6 +13,7 @@ namespace Hotel
 {
     public partial class LoginForma : Form
     {
+        DBconnect connect = new DBconnect();
         public LoginForma()
         {
             InitializeComponent();
@@ -31,6 +32,13 @@ namespace Hotel
         private void label_exit_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+        private void LoginForm_Load(Object sender, EventArgs e)
+        { }
+
+        private void Button_login_Click(object sender, EventArgs e)
+        {
+           
         }
     }
 }

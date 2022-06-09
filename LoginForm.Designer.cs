@@ -125,6 +125,7 @@ namespace Hotel
             this.Button_login.Size = new System.Drawing.Size(287, 45);
             this.Button_login.TabIndex = 5;
             this.Button_login.Text = "Uloguj se";
+            this.Button_login.Click += new System.EventHandler(this.Button_login_Click);
             // 
             // label_exit
             // 
