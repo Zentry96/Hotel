@@ -1,0 +1,12 @@
+C:\Users\llmil\Desktop\Hotel\Hotel\Hotel\bin\Debug\Hotel.exe.config
+C:\Users\llmil\Desktop\Hotel\Hotel\Hotel\bin\Debug\Hotel.exe
+C:\Users\llmil\Desktop\Hotel\Hotel\Hotel\bin\Debug\Hotel.pdb
+C:\Users\llmil\Desktop\Hotel\Hotel\Hotel\bin\Debug\Guna.UI2.dll
+C:\Users\llmil\Desktop\Hotel\Hotel\Hotel\obj\Debug\Hotel.csprojAssemblyReference.cache
+C:\Users\llmil\Desktop\Hotel\Hotel\Hotel\obj\Debug\Hotel.LoginForma.resources
+C:\Users\llmil\Desktop\Hotel\Hotel\Hotel\obj\Debug\Hotel.Properties.Resources.resources
+C:\Users\llmil\Desktop\Hotel\Hotel\Hotel\obj\Debug\Hotel.csproj.GenerateResource.cache
+C:\Users\llmil\Desktop\Hotel\Hotel\Hotel\obj\Debug\Hotel.csproj.CoreCompileInputs.cache
+C:\Users\llmil\Desktop\Hotel\Hotel\Hotel\obj\Debug\Hotel.csproj.CopyComplete
+C:\Users\llmil\Desktop\Hotel\Hotel\Hotel\obj\Debug\Hotel.exe
+C:\Users\llmil\Desktop\Hotel\Hotel\Hotel\obj\Debug\Hotel.pdb
