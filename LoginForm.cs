@@ -39,23 +39,31 @@ namespace Hotel
 
         private void Button_login_Click(object sender, EventArgs e)
         {
-            DataTable table = new DataTable();
-            MySqlDataAdapter adapter = new MySqlDataAdapter();
-            string selectquery = "SELECT * FROM `users` WHERE `username` = @usn AND `password` = @pass;";
-            MySqlCommand command = new MySqlCommand(selectquery,connect.GetConnection());
-            command.Parameters.Add("@usn", MySqlDbType.VarChar).Value = TextBox_username.Text;
-            command.Parameters.Add("@pass", MySqlDbType.VarChar).Value = TextBox_password.Text;
-            adapter.SelectCommand = command;
-            adapter.Fill(table);
-
-            
-            if (table.Rows.Count > 0)
+            if (TextBox_username.Text.Trim().Equals("") || TextBox_password.Text == "")
             {
-                MessageBox.Show("Da");
+                MessageBox.Show("Unesite vaše korisničko ime i šifru", "Nedostaju podaci", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else
             {
-                MessageBox.Show("Ne");
+                DataTable table = new DataTable();
+                MySqlDataAdapter adapter = new MySqlDataAdapter();
+                string selectquery = "SELECT * FROM `users` WHERE `username` = @usn AND `password` = @pass;";
+                MySqlCommand command = new MySqlCommand(selectquery, connect.GetConnection());
+                command.Parameters.Add("@usn", MySqlDbType.VarChar).Value = TextBox_username.Text;
+                command.Parameters.Add("@pass", MySqlDbType.VarChar).Value = TextBox_password.Text;
+                adapter.SelectCommand = command;
+                adapter.Fill(table);
+
+                if (table.Rows.Count > 0)
+                {
+                    this.Hide();
+                    MainForm mainForm = new MainForm();
+                    mainForm.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Ovo korisničko ime i šifra ne postoje", "Pogrešni podaci", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
         }
     }
