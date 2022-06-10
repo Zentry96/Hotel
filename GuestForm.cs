@@ -59,5 +59,22 @@ namespace Hotel
                 }
             }
         }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void label7_MouseEnter(object sender, EventArgs e)
+        {
+            label7.ForeColor = Color.Red;
+        }
+
+        private void label7_MouseLeave(object sender, EventArgs e)
+        {
+            label7.ForeColor = Color.Black;
+        }
+
+
     }
 }

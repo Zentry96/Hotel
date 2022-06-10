@@ -31,7 +31,7 @@ namespace Hotel
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.panel_main = new System.Windows.Forms.Panel();
+            this.panel_cover = new System.Windows.Forms.Panel();
             this.checkBox4 = new System.Windows.Forms.CheckBox();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
@@ -47,11 +47,15 @@ namespace Hotel
             this.button_guest = new System.Windows.Forms.Button();
             this.button_dashboard = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel_main = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
-            this.panel_main.SuspendLayout();
+            this.panel_cover.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel2.SuspendLayout();
+            this.panel_main.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -78,23 +82,22 @@ namespace Hotel
             this.panel3.Size = new System.Drawing.Size(154, 100);
             this.panel3.TabIndex = 0;
             // 
-            // panel_main
+            // panel_cover
             // 
-            this.panel_main.BackColor = System.Drawing.Color.White;
-            this.panel_main.Controls.Add(this.panel_slide);
-            this.panel_main.Controls.Add(this.checkBox4);
-            this.panel_main.Controls.Add(this.checkBox3);
-            this.panel_main.Controls.Add(this.checkBox2);
-            this.panel_main.Controls.Add(this.label3);
-            this.panel_main.Controls.Add(this.checkBox1);
-            this.panel_main.Controls.Add(this.pictureBox2);
-            this.panel_main.Controls.Add(this.label2);
-            this.panel_main.Controls.Add(this.label1);
-            this.panel_main.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel_main.Location = new System.Drawing.Point(154, 0);
-            this.panel_main.Name = "panel_main";
-            this.panel_main.Size = new System.Drawing.Size(930, 661);
-            this.panel_main.TabIndex = 1;
+            this.panel_cover.BackColor = System.Drawing.Color.White;
+            this.panel_cover.Controls.Add(this.checkBox4);
+            this.panel_cover.Controls.Add(this.checkBox3);
+            this.panel_cover.Controls.Add(this.checkBox2);
+            this.panel_cover.Controls.Add(this.label3);
+            this.panel_cover.Controls.Add(this.checkBox1);
+            this.panel_cover.Controls.Add(this.pictureBox2);
+            this.panel_cover.Controls.Add(this.label2);
+            this.panel_cover.Controls.Add(this.label1);
+            this.panel_cover.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel_cover.Location = new System.Drawing.Point(11, 0);
+            this.panel_cover.Name = "panel_cover";
+            this.panel_cover.Size = new System.Drawing.Size(919, 661);
+            this.panel_cover.TabIndex = 1;
             // 
             // checkBox4
             // 
@@ -150,7 +153,7 @@ namespace Hotel
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(897, 2);
+            this.label2.Location = new System.Drawing.Point(886, 5);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(33, 31);
             this.label2.TabIndex = 1;
@@ -172,7 +175,7 @@ namespace Hotel
             // panel_slide
             // 
             this.panel_slide.BackColor = System.Drawing.Color.Black;
-            this.panel_slide.Location = new System.Drawing.Point(2, 100);
+            this.panel_slide.Location = new System.Drawing.Point(1, 99);
             this.panel_slide.Name = "panel_slide";
             this.panel_slide.Size = new System.Drawing.Size(10, 76);
             this.panel_slide.TabIndex = 8;
@@ -182,7 +185,7 @@ namespace Hotel
             this.pictureBox2.Image = global::Hotel.Properties.Resources.JW_Marriot_hotel_room_Galaxy_Macau_Phase_2_e1432637852679;
             this.pictureBox2.Location = new System.Drawing.Point(26, 50);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(819, 289);
+            this.pictureBox2.Size = new System.Drawing.Size(866, 289);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 2;
             this.pictureBox2.TabStop = false;
@@ -276,25 +279,50 @@ namespace Hotel
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Controls.Add(this.panel_slide);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panel2.Location = new System.Drawing.Point(154, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(11, 661);
+            this.panel2.TabIndex = 2;
+            // 
+            // panel_main
+            // 
+            this.panel_main.BackColor = System.Drawing.Color.White;
+            this.panel_main.Controls.Add(this.panel_cover);
+            this.panel_main.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel_main.Location = new System.Drawing.Point(154, 0);
+            this.panel_main.Name = "panel_main";
+            this.panel_main.Size = new System.Drawing.Size(930, 661);
+            this.panel_main.TabIndex = 8;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(1084, 661);
-            this.Controls.Add(this.panel_main);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel_main);
             this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "MainForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MainForm";
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
-            this.panel_main.ResumeLayout(false);
-            this.panel_main.PerformLayout();
+            this.panel_cover.ResumeLayout(false);
+            this.panel_cover.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel_main.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -304,7 +332,7 @@ namespace Hotel
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Panel panel_main;
+        private System.Windows.Forms.Panel panel_cover;
         private System.Windows.Forms.Button button_dashboard;
         private System.Windows.Forms.Button button_guest;
         private System.Windows.Forms.Button button_room;
@@ -319,5 +347,7 @@ namespace Hotel
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Panel panel_slide;
         private System.Windows.Forms.Button button_logout;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel_main;
     }
 }

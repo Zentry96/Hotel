@@ -21,6 +21,9 @@ namespace Hotel
         {
             panel_slide.Height = button_dashboard.Height;
             panel_slide.Top = button_dashboard.Top;
+
+            panel_main.Controls.Clear();
+            panel_main.Controls.Add(panel_cover);
         }
 
         private void button_guest_Click(object sender, EventArgs e)
