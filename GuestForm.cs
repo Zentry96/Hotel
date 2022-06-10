@@ -12,6 +12,7 @@ namespace Hotel
 {
     public partial class GuestForm : Form
     {
+        GuestClass guest = new GuestClass();
         public GuestForm()
         {
             InitializeComponent();
@@ -24,6 +25,25 @@ namespace Hotel
             textBox_lName.Clear();
             textBox_phone.Clear();
             textBox_city.Clear();
+        }
+
+        private void button_save_Click(object sender, EventArgs e)
+        {
+            string id = textBox_id.Text;
+            string fname = textBox_fName.Text;
+            string lname = textBox_lName.Text;
+            string phone = textBox_phone.Text;
+            string city = textBox_city.Text;
+
+            Boolean insertGuest = guest.insertGuest(id, fname, lname, phone, city);
+            if (insertGuest)
+            {
+                MessageBox.Show("Novi gost uspešno dodat", "Gost sačuvan", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Dodavanje novog gosta nije uspelo", "Greška pri dodavanju", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
     }
 }
