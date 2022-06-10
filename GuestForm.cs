@@ -16,5 +16,14 @@ namespace Hotel
         {
             InitializeComponent();
         }
+
+        private void button_clean_Click(object sender, EventArgs e)
+        {
+            textBox_id.Clear();
+            textBox_fName.Clear();
+            textBox_lName.Clear();
+            textBox_phone.Clear();
+            textBox_city.Clear();
+        }
     }
 }
