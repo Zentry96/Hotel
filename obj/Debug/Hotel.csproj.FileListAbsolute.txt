@@ -24,3 +24,4 @@ C:\Users\llmil\Desktop\Hotel\Hotel\Hotel\bin\Debug\K4os.Hash.xxHash.dll
 C:\Users\llmil\Desktop\Hotel\Hotel\Hotel\bin\Debug\System.Numerics.Vectors.dll
 C:\Users\llmil\Desktop\Hotel\Hotel\Hotel\bin\Debug\MySql.Data.xml
 C:\Users\llmil\Desktop\Hotel\Hotel\Hotel\obj\Debug\Hotel.exe.config
+C:\Users\llmil\Desktop\Hotel\Hotel\Hotel\obj\Debug\Hotel.MainForm.resources
