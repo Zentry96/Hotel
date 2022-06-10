@@ -45,5 +45,28 @@ namespace Hotel
 
             return table;
         }
+
+        public bool editGuest(string id, string fname, string lname, string phone, string city)
+        {
+            string editQuerry = "UPDATE `guest` SET , `GuestFirstName`=[@fname], `GuestLastName`=[@lname], `GuestPhone`=[@phone], `GuestCity`=[@city]";
+            MySqlCommand command = new MySqlCommand(editQuerry, connect.GetConnection());
+            command.Parameters.Add("@id", MySqlDbType.Int16).Value = id;
+            command.Parameters.Add("@fname", MySqlDbType.VarChar).Value = fname;
+            command.Parameters.Add("@lname", MySqlDbType.VarChar).Value = lname;
+            command.Parameters.Add("@phone", MySqlDbType.VarChar).Value = phone;
+            command.Parameters.Add("@city", MySqlDbType.VarChar).Value = city;
+
+            connect.OpenCon();
+            if (command.ExecuteNonQuery() == 1)
+            {
+                connect.CloseCon();
+                return true;
+            }
+            else
+            {
+                connect.CloseCon();
+                return false;
+            }
+        }
     }
 }

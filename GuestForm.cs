@@ -47,6 +47,7 @@ namespace Hotel
                     if (insertGuest)
                     {
                         MessageBox.Show("Novi gost uspešno dodat", "Gost sačuvan", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        getTable();
                     }
                     else
                     {
@@ -77,7 +78,46 @@ namespace Hotel
 
         private void GuestForm_Load(object sender, EventArgs e)
         {
+            dataGridView_guest.DefaultCellStyle.ForeColor = Color.Black;
+            getTable();
+        }
+        private void getTable()
+        {
             dataGridView_guest.DataSource = guest.getGuest();
+        }
+
+        private void button_update_Click(object sender, EventArgs e)
+        {
+            if (textBox_id.Text == "" || textBox_fName.Text == "" || textBox_phone.Text == "" || textBox_lName.Text == "" || textBox_city.Text == "")
+            {
+                MessageBox.Show("Niste uneli sve podatke", "Nedostatak podataka", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                try
+                {
+                    string id = textBox_id.Text;
+                    string fname = textBox_fName.Text;
+                    string lname = textBox_lName.Text;
+                    string phone = textBox_phone.Text;
+                    string city = textBox_city.Text;
+
+                    Boolean editGuest = guest.editGuest(id, fname, lname, phone, city);
+                    if (editGuest)
+                    {
+                        MessageBox.Show("Podaci gosta promenjeni", "Obnova podataka", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        getTable();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Promena gosta nije uspela", "Greška pri promeni", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
         }
     }
 }

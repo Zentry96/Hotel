@@ -209,6 +209,7 @@ namespace Hotel
             this.button_update.Text = "Obnovi";
             this.button_update.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button_update.UseVisualStyleBackColor = true;
+            this.button_update.Click += new System.EventHandler(this.button_update_Click);
             // 
             // button_delete
             // 
