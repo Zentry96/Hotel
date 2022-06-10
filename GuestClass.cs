@@ -33,5 +33,17 @@ namespace Hotel
                 return false;
             }
         }
+        public DataTable getGuest()
+        {
+            string selectQuery = "SELECT * FROM `guest`";
+            MySqlCommand command = new MySqlCommand(selectQuery, connect.GetConnection());
+            MySqlDataAdapter adapter = new MySqlDataAdapter();
+            DataTable table = new DataTable();
+
+            adapter.SelectCommand = command;
+            adapter.Fill(table);
+
+            return table;
+        }
     }
 }

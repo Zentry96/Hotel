@@ -75,6 +75,9 @@ namespace Hotel
             label7.ForeColor = Color.Black;
         }
 
-
+        private void GuestForm_Load(object sender, EventArgs e)
+        {
+            dataGridView_guest.DataSource = guest.getGuest();
+        }
     }
 }
