@@ -29,16 +29,11 @@ namespace Hotel
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridView_room = new Guna.UI2.WinForms.Guna2DataGridView();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.button_clean = new System.Windows.Forms.Button();
-            this.button_delete = new System.Windows.Forms.Button();
-            this.button_logout = new System.Windows.Forms.Button();
-            this.button_update = new System.Windows.Forms.Button();
-            this.button_add = new System.Windows.Forms.Button();
             this.textBox_phone = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -52,6 +47,10 @@ namespace Hotel
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.radioButton_slobodna = new System.Windows.Forms.RadioButton();
             this.radioButton_zauzeta = new System.Windows.Forms.RadioButton();
+            this.button_clean = new System.Windows.Forms.Button();
+            this.button_delete = new System.Windows.Forms.Button();
+            this.button_update = new System.Windows.Forms.Button();
+            this.button_add = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_room)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -60,29 +59,29 @@ namespace Hotel
             // 
             // dataGridView_room
             // 
-            dataGridViewCellStyle16.BackColor = System.Drawing.Color.White;
-            this.dataGridView_room.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle16;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.dataGridView_room.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView_room.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView_room.BackgroundColor = System.Drawing.Color.Silver;
             this.dataGridView_room.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView_room.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dataGridView_room.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle17.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView_room.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle17;
-            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle18.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle18.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView_room.DefaultCellStyle = dataGridViewCellStyle18;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView_room.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView_room.DefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView_room.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView_room.EnableHeadersVisualStyles = false;
             this.dataGridView_room.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
@@ -123,75 +122,6 @@ namespace Hotel
             this.panel3.Size = new System.Drawing.Size(900, 359);
             this.panel3.TabIndex = 35;
             // 
-            // button_clean
-            // 
-            this.button_clean.FlatAppearance.BorderSize = 0;
-            this.button_clean.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_clean.Image = global::Hotel.Properties.Resources.icons8_clear_formatting_40;
-            this.button_clean.Location = new System.Drawing.Point(659, 551);
-            this.button_clean.Name = "button_clean";
-            this.button_clean.Size = new System.Drawing.Size(163, 85);
-            this.button_clean.TabIndex = 25;
-            this.button_clean.Text = "Očisti";
-            this.button_clean.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button_clean.UseVisualStyleBackColor = true;
-            this.button_clean.Click += new System.EventHandler(this.button_clean_Click);
-            // 
-            // button_delete
-            // 
-            this.button_delete.FlatAppearance.BorderSize = 0;
-            this.button_delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_delete.Image = global::Hotel.Properties.Resources.icons8_delete_document_40;
-            this.button_delete.Location = new System.Drawing.Point(486, 551);
-            this.button_delete.Name = "button_delete";
-            this.button_delete.Size = new System.Drawing.Size(163, 85);
-            this.button_delete.TabIndex = 23;
-            this.button_delete.Text = "Obriši";
-            this.button_delete.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button_delete.UseVisualStyleBackColor = true;
-            this.button_delete.Click += new System.EventHandler(this.button_delete_Click);
-            // 
-            // button_logout
-            // 
-            this.button_logout.FlatAppearance.BorderSize = 0;
-            this.button_logout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_logout.Image = global::Hotel.Properties.Resources.icons8_logout_58;
-            this.button_logout.Location = new System.Drawing.Point(759, 439);
-            this.button_logout.Name = "button_logout";
-            this.button_logout.Size = new System.Drawing.Size(163, 85);
-            this.button_logout.TabIndex = 26;
-            this.button_logout.Text = "Izloguj se";
-            this.button_logout.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button_logout.UseVisualStyleBackColor = true;
-            // 
-            // button_update
-            // 
-            this.button_update.FlatAppearance.BorderSize = 0;
-            this.button_update.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_update.Image = global::Hotel.Properties.Resources.icons8_available_updates_40;
-            this.button_update.Location = new System.Drawing.Point(311, 551);
-            this.button_update.Name = "button_update";
-            this.button_update.Size = new System.Drawing.Size(163, 85);
-            this.button_update.TabIndex = 22;
-            this.button_update.Text = "Obnovi";
-            this.button_update.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button_update.UseVisualStyleBackColor = true;
-            this.button_update.Click += new System.EventHandler(this.button_update_Click);
-            // 
-            // button_add
-            // 
-            this.button_add.FlatAppearance.BorderSize = 0;
-            this.button_add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_add.Image = global::Hotel.Properties.Resources.icons8_save_40;
-            this.button_add.Location = new System.Drawing.Point(132, 551);
-            this.button_add.Name = "button_add";
-            this.button_add.Size = new System.Drawing.Size(163, 85);
-            this.button_add.TabIndex = 20;
-            this.button_add.Text = "Dodaj";
-            this.button_add.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button_add.UseVisualStyleBackColor = true;
-            this.button_add.Click += new System.EventHandler(this.button_add_Click);
-            // 
             // textBox_phone
             // 
             this.textBox_phone.Location = new System.Drawing.Point(258, 499);
@@ -219,7 +149,7 @@ namespace Hotel
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(914, 63);
+            this.panel1.Size = new System.Drawing.Size(930, 63);
             this.panel1.TabIndex = 30;
             // 
             // label6
@@ -315,18 +245,73 @@ namespace Hotel
             this.radioButton_zauzeta.Text = "Zauzeta";
             this.radioButton_zauzeta.UseVisualStyleBackColor = true;
             // 
+            // button_clean
+            // 
+            this.button_clean.FlatAppearance.BorderSize = 0;
+            this.button_clean.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_clean.Image = global::Hotel.Properties.Resources.icons8_clear_formatting_40;
+            this.button_clean.Location = new System.Drawing.Point(659, 551);
+            this.button_clean.Name = "button_clean";
+            this.button_clean.Size = new System.Drawing.Size(163, 85);
+            this.button_clean.TabIndex = 25;
+            this.button_clean.Text = "Očisti";
+            this.button_clean.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.button_clean.UseVisualStyleBackColor = true;
+            this.button_clean.Click += new System.EventHandler(this.button_clean_Click);
+            // 
+            // button_delete
+            // 
+            this.button_delete.FlatAppearance.BorderSize = 0;
+            this.button_delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_delete.Image = global::Hotel.Properties.Resources.icons8_delete_document_40;
+            this.button_delete.Location = new System.Drawing.Point(486, 551);
+            this.button_delete.Name = "button_delete";
+            this.button_delete.Size = new System.Drawing.Size(163, 85);
+            this.button_delete.TabIndex = 23;
+            this.button_delete.Text = "Obriši";
+            this.button_delete.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.button_delete.UseVisualStyleBackColor = true;
+            this.button_delete.Click += new System.EventHandler(this.button_delete_Click);
+            // 
+            // button_update
+            // 
+            this.button_update.FlatAppearance.BorderSize = 0;
+            this.button_update.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_update.Image = global::Hotel.Properties.Resources.icons8_available_updates_40;
+            this.button_update.Location = new System.Drawing.Point(311, 551);
+            this.button_update.Name = "button_update";
+            this.button_update.Size = new System.Drawing.Size(163, 85);
+            this.button_update.TabIndex = 22;
+            this.button_update.Text = "Obnovi";
+            this.button_update.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.button_update.UseVisualStyleBackColor = true;
+            this.button_update.Click += new System.EventHandler(this.button_update_Click);
+            // 
+            // button_add
+            // 
+            this.button_add.FlatAppearance.BorderSize = 0;
+            this.button_add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_add.Image = global::Hotel.Properties.Resources.icons8_save_40;
+            this.button_add.Location = new System.Drawing.Point(132, 551);
+            this.button_add.Name = "button_add";
+            this.button_add.Size = new System.Drawing.Size(163, 85);
+            this.button_add.TabIndex = 20;
+            this.button_add.Text = "Dodaj";
+            this.button_add.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.button_add.UseVisualStyleBackColor = true;
+            this.button_add.Click += new System.EventHandler(this.button_add_Click);
+            // 
             // RoomForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(914, 622);
+            this.ClientSize = new System.Drawing.Size(930, 661);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.comboBox_roomType);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.button_clean);
             this.Controls.Add(this.button_delete);
-            this.Controls.Add(this.button_logout);
             this.Controls.Add(this.button_update);
             this.Controls.Add(this.button_add);
             this.Controls.Add(this.textBox_phone);
@@ -360,7 +345,6 @@ namespace Hotel
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button button_clean;
         private System.Windows.Forms.Button button_delete;
-        private System.Windows.Forms.Button button_logout;
         private System.Windows.Forms.Button button_update;
         private System.Windows.Forms.Button button_add;
         private System.Windows.Forms.TextBox textBox_phone;
