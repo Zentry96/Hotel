@@ -92,5 +92,81 @@ namespace Hotel
         {
             label7.ForeColor = Color.Orange;
         }
+
+        private void dataGridView_reserv_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            textBox_reservid.Text = dataGridView_reserv.CurrentRow.Cells[0].Value.ToString();
+            textBox_guestid.Text = dataGridView_reserv.CurrentRow.Cells[1].Value.ToString();
+            comboBox_roomID.SelectedValue = dataGridView_reserv.CurrentRow.Cells[2].Value.ToString();
+
+
+        }
+
+        private void button_delete_Click(object sender, EventArgs e)
+        {
+            if (textBox_reservid.Text == "")
+            {
+                MessageBox.Show("Kliknite na rezervaciju koju želite da obrišete", "Prazno polje ID rezervacije", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                try
+                {
+                    string id = textBox_reservid.Text;
+
+                    Boolean deleteReserv = reservation.removeReserv(Int32.Parse(id));
+                    if (deleteReserv)
+                    {
+                        MessageBox.Show("Rezervacija obrisana iz baze", "Rezervacija obrisana", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        getReservTable();
+                        button_clean.PerformClick();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Brisanje sobe iz baze nije uspelo", "Greška pri brisanju", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+        }
+
+        private void button_clean_Click(object sender, EventArgs e)
+        {
+            textBox_guestid.Clear();
+            comboBox_roomType.SelectedIndex = 0;
+            comboBox_roomID.SelectedIndex = 0;
+            textBox_reservid.Clear();
+        }
+
+        private void button_update_Click(object sender, EventArgs e)
+        {
+            //dateTimePicker1.Value.ToString("MM/dd/yyyy")
+            int reservationid = Convert.ToInt32(textBox_reservid.Text);
+            int roomid = Convert.ToInt32(comboBox_roomID.SelectedValue.ToString());
+            int guestid = Convert.ToInt32(textBox_guestid.Text);
+            DateTime datein = Convert.ToDateTime(dateTimePicker_dateIn);
+            DateTime dateout = Convert.ToDateTime(dateTimePicker_dateOut);
+
+            try
+            {
+                if (reservation.editReserv(reservationid, roomid, guestid, datein, dateout))
+                {
+                    MessageBox.Show("Rezervacija uspešno obnovljena", "Obnova podataka rezervacije", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    getReservTable();
+                    button_clean.PerformClick();
+                }
+                else
+                {
+                    MessageBox.Show("Rezervacija nije obnovljena", "Greška pri obnovi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }

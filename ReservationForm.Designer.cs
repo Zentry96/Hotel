@@ -29,9 +29,9 @@ namespace Hotel
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel3 = new System.Windows.Forms.Panel();
             this.dataGridView_reserv = new Guna.UI2.WinForms.Guna2DataGridView();
             this.button_clean = new System.Windows.Forms.Button();
@@ -51,6 +51,8 @@ namespace Hotel
             this.dateTimePicker_dateOut = new System.Windows.Forms.DateTimePicker();
             this.comboBox_roomType = new System.Windows.Forms.ComboBox();
             this.textBox_guestid = new System.Windows.Forms.TextBox();
+            this.textBox_reservid = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_reserv)).BeginInit();
             this.panel1.SuspendLayout();
@@ -66,29 +68,29 @@ namespace Hotel
             // 
             // dataGridView_reserv
             // 
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
-            this.dataGridView_reserv.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle13.BackColor = System.Drawing.Color.White;
+            this.dataGridView_reserv.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
             this.dataGridView_reserv.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView_reserv.BackgroundColor = System.Drawing.Color.Silver;
             this.dataGridView_reserv.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView_reserv.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dataGridView_reserv.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView_reserv.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.HotTrack;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView_reserv.DefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView_reserv.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle15.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle15.ForeColor = System.Drawing.SystemColors.HotTrack;
+            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView_reserv.DefaultCellStyle = dataGridViewCellStyle15;
             this.dataGridView_reserv.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView_reserv.EnableHeadersVisualStyles = false;
             this.dataGridView_reserv.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
@@ -119,6 +121,7 @@ namespace Hotel
             this.dataGridView_reserv.ThemeStyle.RowsStyle.Height = 22;
             this.dataGridView_reserv.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dataGridView_reserv.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dataGridView_reserv.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_reserv_CellClick);
             // 
             // button_clean
             // 
@@ -132,6 +135,7 @@ namespace Hotel
             this.button_clean.Text = "Očisti";
             this.button_clean.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button_clean.UseVisualStyleBackColor = true;
+            this.button_clean.Click += new System.EventHandler(this.button_clean_Click);
             // 
             // button_delete
             // 
@@ -145,6 +149,7 @@ namespace Hotel
             this.button_delete.Text = "Obriši";
             this.button_delete.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button_delete.UseVisualStyleBackColor = true;
+            this.button_delete.Click += new System.EventHandler(this.button_delete_Click);
             // 
             // button_update
             // 
@@ -158,6 +163,7 @@ namespace Hotel
             this.button_update.Text = "Obnovi";
             this.button_update.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button_update.UseVisualStyleBackColor = true;
+            this.button_update.Click += new System.EventHandler(this.button_update_Click);
             // 
             // button_add
             // 
@@ -246,7 +252,7 @@ namespace Hotel
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(407, 473);
+            this.label4.Location = new System.Drawing.Point(407, 487);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(161, 21);
             this.label4.TabIndex = 55;
@@ -255,7 +261,7 @@ namespace Hotel
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(434, 507);
+            this.label8.Location = new System.Drawing.Point(434, 521);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(134, 21);
             this.label8.TabIndex = 56;
@@ -264,9 +270,9 @@ namespace Hotel
             // dateTimePicker_dateIn
             // 
             this.dateTimePicker_dateIn.CalendarForeColor = System.Drawing.SystemColors.HotTrack;
-            this.dateTimePicker_dateIn.CustomFormat = "dd/MM/yyy";
+            this.dateTimePicker_dateIn.CustomFormat = "";
             this.dateTimePicker_dateIn.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker_dateIn.Location = new System.Drawing.Point(573, 468);
+            this.dateTimePicker_dateIn.Location = new System.Drawing.Point(573, 482);
             this.dateTimePicker_dateIn.Name = "dateTimePicker_dateIn";
             this.dateTimePicker_dateIn.Size = new System.Drawing.Size(200, 27);
             this.dateTimePicker_dateIn.TabIndex = 57;
@@ -274,9 +280,9 @@ namespace Hotel
             // dateTimePicker_dateOut
             // 
             this.dateTimePicker_dateOut.CalendarForeColor = System.Drawing.SystemColors.HotTrack;
-            this.dateTimePicker_dateOut.CustomFormat = "dd/MM/yyy";
+            this.dateTimePicker_dateOut.CustomFormat = "";
             this.dateTimePicker_dateOut.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker_dateOut.Location = new System.Drawing.Point(573, 502);
+            this.dateTimePicker_dateOut.Location = new System.Drawing.Point(573, 516);
             this.dateTimePicker_dateOut.Name = "dateTimePicker_dateOut";
             this.dateTimePicker_dateOut.Size = new System.Drawing.Size(200, 27);
             this.dateTimePicker_dateOut.TabIndex = 58;
@@ -299,12 +305,31 @@ namespace Hotel
             this.textBox_guestid.Size = new System.Drawing.Size(141, 27);
             this.textBox_guestid.TabIndex = 60;
             // 
+            // textBox_reservid
+            // 
+            this.textBox_reservid.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.textBox_reservid.Location = new System.Drawing.Point(571, 442);
+            this.textBox_reservid.Name = "textBox_reservid";
+            this.textBox_reservid.Size = new System.Drawing.Size(141, 27);
+            this.textBox_reservid.TabIndex = 62;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(440, 444);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(128, 21);
+            this.label1.TabIndex = 61;
+            this.label1.Text = "ID Rezervacije :";
+            // 
             // ReservationForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(930, 661);
+            this.Controls.Add(this.textBox_reservid);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox_guestid);
             this.Controls.Add(this.comboBox_roomType);
             this.Controls.Add(this.dateTimePicker_dateOut);
@@ -357,5 +382,7 @@ namespace Hotel
         private System.Windows.Forms.DateTimePicker dateTimePicker_dateOut;
         private System.Windows.Forms.ComboBox comboBox_roomType;
         private System.Windows.Forms.TextBox textBox_guestid;
+        private System.Windows.Forms.TextBox textBox_reservid;
+        private System.Windows.Forms.Label label1;
     }
 }

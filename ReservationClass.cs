@@ -57,5 +57,46 @@ namespace Hotel
 
             return table;
         }
+        public bool removeReserv(int id)
+        {
+            string insertQuerry = "DELETE FROM `reservation` WHERE `ReservationID` =@id";
+            MySqlCommand command = new MySqlCommand(insertQuerry, connect.GetConnection());
+            command.Parameters.Add("@id", MySqlDbType.Int32).Value = id;
+
+            connect.OpenCon();
+            if (command.ExecuteNonQuery() == 1)
+            {
+                connect.CloseCon();
+                return true;
+            }
+            else
+            {
+                connect.CloseCon();
+                return false;
+            }
+        }
+
+        public bool editReserv(int reservationid, int guestid, int roomid, DateTime datein, DateTime dateout)
+        {
+            string editQuerry = "UPDATE `reservation` SET `GuestID`=@guestid,`RoomID`=@roomid,`DateIn`=@datein,`DateOut`=@dateout WHERE `ReservationID`='@reservationid'";
+            MySqlCommand command = new MySqlCommand(editQuerry, connect.GetConnection());
+            command.Parameters.Add("@reservationid", MySqlDbType.Int32).Value = reservationid;
+            command.Parameters.Add("@guestid", MySqlDbType.Int32).Value = guestid;
+            command.Parameters.Add("@roomid", MySqlDbType.Int32).Value = roomid;
+            command.Parameters.Add("@datein", MySqlDbType.DateTime).Value = datein;
+            command.Parameters.Add("@dateout", MySqlDbType.DateTime).Value = dateout;
+
+            connect.OpenCon();
+            if (command.ExecuteNonQuery() == 1)
+            {
+                connect.CloseCon();
+                return true;
+            }
+            else
+            {
+                connect.CloseCon();
+                return false;
+            }
+        }
     }
 }
