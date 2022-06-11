@@ -30,7 +30,7 @@ namespace Hotel
             comboBox_roomID.DisplayMember = "RoomID";
             comboBox_roomID.ValueMember = "RoomID";
 
-            dataGridView_reserv.DataSource = reservation.getReserv();
+            getReservTable();
         }
 
         private void comboBox_roomType_SelectedIndexChanged(object sender, EventArgs e)
@@ -59,6 +59,7 @@ namespace Hotel
 
                 if (reservation.addReservation(guestid, roomid, datein, dateout))
                 {
+                    getReservTable();
                     MessageBox.Show("Rezervacija uspešno napravljena", "Dodavanje rezervacije", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else
@@ -70,6 +71,26 @@ namespace Hotel
             {
                 MessageBox.Show(ex.Message, "greška pri dodavanju", MessageBoxButtons.OK,MessageBoxIcon.Error);
             }
+        }
+
+        public void getReservTable()
+        {
+            dataGridView_reserv.DataSource = reservation.getReserv();
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void label7_MouseEnter(object sender, EventArgs e)
+        {
+            label7.ForeColor = Color.Red;
+        }
+
+        private void label7_MouseLeave(object sender, EventArgs e)
+        {
+            label7.ForeColor = Color.Orange;
         }
     }
 }

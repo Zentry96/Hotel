@@ -38,6 +38,8 @@ namespace Hotel
             this.label_exit = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -85,7 +87,7 @@ namespace Hotel
             // pictureBox3
             // 
             this.pictureBox3.Image = global::Hotel.Properties.Resources.Screenshot_2;
-            this.pictureBox3.Location = new System.Drawing.Point(39, 338);
+            this.pictureBox3.Location = new System.Drawing.Point(36, 338);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(37, 36);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -95,7 +97,7 @@ namespace Hotel
             // pictureBox2
             // 
             this.pictureBox2.Image = global::Hotel.Properties.Resources.Screenshot_1;
-            this.pictureBox2.Location = new System.Drawing.Point(39, 285);
+            this.pictureBox2.Location = new System.Drawing.Point(36, 285);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(37, 36);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -105,7 +107,7 @@ namespace Hotel
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Hotel.Properties.Resources.logo_arandjelovac;
-            this.pictureBox1.Location = new System.Drawing.Point(121, 43);
+            this.pictureBox1.Location = new System.Drawing.Point(116, 43);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(131, 115);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -118,6 +120,7 @@ namespace Hotel
             this.Button_login.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.Button_login.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.Button_login.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.Button_login.FillColor = System.Drawing.SystemColors.HotTrack;
             this.Button_login.Font = new System.Drawing.Font("Sitka Display", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Button_login.ForeColor = System.Drawing.Color.White;
             this.Button_login.Location = new System.Drawing.Point(33, 398);
@@ -130,11 +133,11 @@ namespace Hotel
             // label_exit
             // 
             this.label_exit.AutoSize = true;
-            this.label_exit.Font = new System.Drawing.Font("Sitka Display", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_exit.Font = new System.Drawing.Font("Sitka Display", 18F, System.Drawing.FontStyle.Bold);
             this.label_exit.ForeColor = System.Drawing.Color.Orange;
-            this.label_exit.Location = new System.Drawing.Point(324, -3);
+            this.label_exit.Location = new System.Drawing.Point(320, 0);
             this.label_exit.Name = "label_exit";
-            this.label_exit.Size = new System.Drawing.Size(26, 30);
+            this.label_exit.Size = new System.Drawing.Size(29, 35);
             this.label_exit.TabIndex = 6;
             this.label_exit.Text = "X";
             this.label_exit.Click += new System.EventHandler(this.label_exit_Click);
@@ -145,29 +148,46 @@ namespace Hotel
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Sitka Display", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(130, 180);
+            this.label1.ForeColor = System.Drawing.Color.Orange;
+            this.label1.Location = new System.Drawing.Point(124, 176);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(55, 30);
+            this.label1.Size = new System.Drawing.Size(62, 30);
             this.label1.TabIndex = 7;
-            this.label1.Text = "User";
+            this.label1.Text = "Hotel";
+
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Sitka Display", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Red;
-            this.label2.Location = new System.Drawing.Point(179, 180);
+            this.label2.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.label2.Location = new System.Drawing.Point(180, 176);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(64, 30);
+            this.label2.Size = new System.Drawing.Size(58, 30);
             this.label2.TabIndex = 8;
-            this.label2.Text = "Login";
+            this.label2.Text = "ASSŠ";
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Orange;
+            this.panel1.Location = new System.Drawing.Point(78, 280);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(239, 46);
+            this.panel1.TabIndex = 9;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Orange;
+            this.panel2.Location = new System.Drawing.Point(78, 333);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(239, 46);
+            this.panel2.TabIndex = 10;
             // 
             // LoginForma
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(350, 550);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -178,6 +198,8 @@ namespace Hotel
             this.Controls.Add(this.TextBox_password);
             this.Controls.Add(this.TextBox_username);
             this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "LoginForma";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -201,6 +223,8 @@ namespace Hotel
         private System.Windows.Forms.Label label_exit;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
     }
 }
 

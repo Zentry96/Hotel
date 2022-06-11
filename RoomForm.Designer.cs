@@ -133,6 +133,7 @@ namespace Hotel
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.Orange;
             this.label7.Location = new System.Drawing.Point(885, 9);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(33, 31);
@@ -156,6 +157,7 @@ namespace Hotel
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Monotype Corsiva", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.label6.Location = new System.Drawing.Point(385, 13);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(186, 28);
@@ -165,6 +167,7 @@ namespace Hotel
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.label4.Location = new System.Drawing.Point(495, 463);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(67, 21);
@@ -174,6 +177,7 @@ namespace Hotel
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.label3.Location = new System.Drawing.Point(178, 499);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(74, 21);
@@ -183,6 +187,7 @@ namespace Hotel
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.label2.Location = new System.Drawing.Point(171, 466);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(81, 21);
@@ -192,6 +197,7 @@ namespace Hotel
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.label1.Location = new System.Drawing.Point(166, 430);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(86, 21);
@@ -226,6 +232,7 @@ namespace Hotel
             // radioButton_slobodna
             // 
             this.radioButton_slobodna.AutoSize = true;
+            this.radioButton_slobodna.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.radioButton_slobodna.Location = new System.Drawing.Point(6, 12);
             this.radioButton_slobodna.Name = "radioButton_slobodna";
             this.radioButton_slobodna.Size = new System.Drawing.Size(102, 25);
@@ -237,6 +244,7 @@ namespace Hotel
             // radioButton_zauzeta
             // 
             this.radioButton_zauzeta.AutoSize = true;
+            this.radioButton_zauzeta.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.radioButton_zauzeta.Location = new System.Drawing.Point(6, 43);
             this.radioButton_zauzeta.Name = "radioButton_zauzeta";
             this.radioButton_zauzeta.Size = new System.Drawing.Size(92, 25);
@@ -249,6 +257,7 @@ namespace Hotel
             // 
             this.button_clean.FlatAppearance.BorderSize = 0;
             this.button_clean.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_clean.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.button_clean.Image = global::Hotel.Properties.Resources.icons8_clear_formatting_40;
             this.button_clean.Location = new System.Drawing.Point(659, 551);
             this.button_clean.Name = "button_clean";
@@ -263,6 +272,7 @@ namespace Hotel
             // 
             this.button_delete.FlatAppearance.BorderSize = 0;
             this.button_delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_delete.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.button_delete.Image = global::Hotel.Properties.Resources.icons8_delete_document_40;
             this.button_delete.Location = new System.Drawing.Point(486, 551);
             this.button_delete.Name = "button_delete";
@@ -277,6 +287,7 @@ namespace Hotel
             // 
             this.button_update.FlatAppearance.BorderSize = 0;
             this.button_update.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_update.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.button_update.Image = global::Hotel.Properties.Resources.icons8_available_updates_40;
             this.button_update.Location = new System.Drawing.Point(311, 551);
             this.button_update.Name = "button_update";
@@ -291,6 +302,7 @@ namespace Hotel
             // 
             this.button_add.FlatAppearance.BorderSize = 0;
             this.button_add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_add.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.button_add.Image = global::Hotel.Properties.Resources.icons8_save_40;
             this.button_add.Location = new System.Drawing.Point(132, 551);
             this.button_add.Name = "button_add";

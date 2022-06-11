@@ -145,7 +145,7 @@ namespace Hotel
 
         private void label7_MouseLeave(object sender, EventArgs e)
         {
-            label7.ForeColor = Color.Black;
+            label7.ForeColor = Color.Orange;
         }
 
         private void label7_Click(object sender, EventArgs e)
