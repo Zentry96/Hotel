@@ -48,6 +48,7 @@ namespace Hotel
                     {
                         MessageBox.Show("Novi gost uspešno dodat", "Gost sačuvan", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         getTable();
+                        button_clean.PerformClick();
                     }
                     else
                     {
@@ -107,6 +108,7 @@ namespace Hotel
                     {
                         MessageBox.Show("Podaci gosta promenjeni", "Obnova podataka", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         getTable();
+                        button_clean.PerformClick();
                     }
                     else
                     {
@@ -144,6 +146,7 @@ namespace Hotel
                     {
                         MessageBox.Show("Gost obrisan iz baze", "Gost obrisan", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         getTable();
+                        button_clean.PerformClick();
                     }
                     else
                     {
