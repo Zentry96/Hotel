@@ -51,7 +51,7 @@ namespace Hotel
                     }
                     else
                     {
-                        MessageBox.Show("Dodavanje novog gosta nije uspelo", "Greška pri dodavanju", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("Dodavanje novog gosta nije uspelo", "Greška pri dodavanju", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
                 catch (Exception ex)
@@ -118,6 +118,44 @@ namespace Hotel
                     MessageBox.Show(ex.Message);
                 }
             }
+        }
+        private void dataGridView_guest_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            textBox_id.Text = dataGridView_guest.CurrentRow.Cells[0].Value.ToString();
+            textBox_fName.Text = dataGridView_guest.CurrentRow.Cells[1].Value.ToString();
+            textBox_lName.Text = dataGridView_guest.CurrentRow.Cells[2].Value.ToString();
+            textBox_phone.Text = dataGridView_guest.CurrentRow.Cells[3].Value.ToString();
+            textBox_city.Text = dataGridView_guest.CurrentRow.Cells[4].Value.ToString();
+        }
+
+        private void button_delete_Click(object sender, EventArgs e)
+        {
+            if (textBox_id.Text == "")
+            {
+                MessageBox.Show("Unesite ID gosta koga želite da obrišete", "Prazno polje za ID", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                try
+                {
+                    string id = textBox_id.Text;
+                    Boolean deleteGuest=guest.removeGuest(id);
+                    if (deleteGuest)
+                    {
+                        MessageBox.Show("Gost obrisan iz baze", "Gost obrisan", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        getTable();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Brisanje gosta iz baze nije uspelo", "Greška pri brisanju", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+            
         }
     }
 }

@@ -223,6 +223,7 @@ namespace Hotel
             this.button_delete.Text = "Obriši";
             this.button_delete.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button_delete.UseVisualStyleBackColor = true;
+            this.button_delete.Click += new System.EventHandler(this.button_delete_Click);
             // 
             // button_clean
             // 
@@ -301,6 +302,7 @@ namespace Hotel
             this.dataGridView_guest.ThemeStyle.RowsStyle.Height = 22;
             this.dataGridView_guest.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dataGridView_guest.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dataGridView_guest.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_guest_CellClick);
             // 
             // GuestForm
             // 
