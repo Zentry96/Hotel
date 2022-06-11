@@ -29,17 +29,17 @@ namespace Hotel
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.dataGridView_guest = new Guna.UI2.WinForms.Guna2DataGridView();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.dataGridView_room = new Guna.UI2.WinForms.Guna2DataGridView();
             this.panel3 = new System.Windows.Forms.Panel();
             this.button_clean = new System.Windows.Forms.Button();
             this.button_delete = new System.Windows.Forms.Button();
             this.button_logout = new System.Windows.Forms.Button();
             this.button_update = new System.Windows.Forms.Button();
-            this.button_save = new System.Windows.Forms.Button();
-            this.textBox_lName = new System.Windows.Forms.TextBox();
+            this.button_add = new System.Windows.Forms.Button();
+            this.textBox_phone = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
@@ -50,73 +50,74 @@ namespace Hotel
             this.textBox_id = new System.Windows.Forms.TextBox();
             this.comboBox_roomType = new System.Windows.Forms.ComboBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_guest)).BeginInit();
+            this.radioButton_slobodna = new System.Windows.Forms.RadioButton();
+            this.radioButton_zauzeta = new System.Windows.Forms.RadioButton();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_room)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // dataGridView_guest
+            // dataGridView_room
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.dataGridView_guest.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridView_guest.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView_guest.BackgroundColor = System.Drawing.Color.Silver;
-            this.dataGridView_guest.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dataGridView_guest.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dataGridView_guest.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView_guest.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView_guest.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dataGridView_guest.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView_guest.EnableHeadersVisualStyles = false;
-            this.dataGridView_guest.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dataGridView_guest.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView_guest.Name = "dataGridView_guest";
-            this.dataGridView_guest.RowHeadersVisible = false;
-            this.dataGridView_guest.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView_guest.Size = new System.Drawing.Size(900, 359);
-            this.dataGridView_guest.TabIndex = 0;
-            this.dataGridView_guest.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.dataGridView_guest.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.dataGridView_guest.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.dataGridView_guest.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.dataGridView_guest.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.dataGridView_guest.ThemeStyle.BackColor = System.Drawing.Color.Silver;
-            this.dataGridView_guest.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dataGridView_guest.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.dataGridView_guest.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dataGridView_guest.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dataGridView_guest.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.dataGridView_guest.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.dataGridView_guest.ThemeStyle.HeaderStyle.Height = 23;
-            this.dataGridView_guest.ThemeStyle.ReadOnly = false;
-            this.dataGridView_guest.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.dataGridView_guest.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dataGridView_guest.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dataGridView_guest.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.Black;
-            this.dataGridView_guest.ThemeStyle.RowsStyle.Height = 22;
-            this.dataGridView_guest.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dataGridView_guest.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle16.BackColor = System.Drawing.Color.White;
+            this.dataGridView_room.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle16;
+            this.dataGridView_room.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView_room.BackgroundColor = System.Drawing.Color.Silver;
+            this.dataGridView_room.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridView_room.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dataGridView_room.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle17.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView_room.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle17;
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle18.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle18.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView_room.DefaultCellStyle = dataGridViewCellStyle18;
+            this.dataGridView_room.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView_room.EnableHeadersVisualStyles = false;
+            this.dataGridView_room.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dataGridView_room.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView_room.Name = "dataGridView_room";
+            this.dataGridView_room.RowHeadersVisible = false;
+            this.dataGridView_room.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridView_room.Size = new System.Drawing.Size(900, 359);
+            this.dataGridView_room.TabIndex = 0;
+            this.dataGridView_room.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.dataGridView_room.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.dataGridView_room.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.dataGridView_room.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.dataGridView_room.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.dataGridView_room.ThemeStyle.BackColor = System.Drawing.Color.Silver;
+            this.dataGridView_room.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dataGridView_room.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.dataGridView_room.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dataGridView_room.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataGridView_room.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.dataGridView_room.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.dataGridView_room.ThemeStyle.HeaderStyle.Height = 23;
+            this.dataGridView_room.ThemeStyle.ReadOnly = false;
+            this.dataGridView_room.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.dataGridView_room.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dataGridView_room.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataGridView_room.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.dataGridView_room.ThemeStyle.RowsStyle.Height = 22;
+            this.dataGridView_room.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dataGridView_room.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dataGridView_room.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_room_CellClick);
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.dataGridView_guest);
+            this.panel3.Controls.Add(this.dataGridView_room);
             this.panel3.Location = new System.Drawing.Point(7, 50);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(900, 359);
@@ -134,6 +135,7 @@ namespace Hotel
             this.button_clean.Text = "Očisti";
             this.button_clean.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button_clean.UseVisualStyleBackColor = true;
+            this.button_clean.Click += new System.EventHandler(this.button_clean_Click);
             // 
             // button_delete
             // 
@@ -147,6 +149,7 @@ namespace Hotel
             this.button_delete.Text = "Obriši";
             this.button_delete.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button_delete.UseVisualStyleBackColor = true;
+            this.button_delete.Click += new System.EventHandler(this.button_delete_Click);
             // 
             // button_logout
             // 
@@ -173,26 +176,28 @@ namespace Hotel
             this.button_update.Text = "Obnovi";
             this.button_update.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button_update.UseVisualStyleBackColor = true;
+            this.button_update.Click += new System.EventHandler(this.button_update_Click);
             // 
-            // button_save
+            // button_add
             // 
-            this.button_save.FlatAppearance.BorderSize = 0;
-            this.button_save.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_save.Image = global::Hotel.Properties.Resources.icons8_save_40;
-            this.button_save.Location = new System.Drawing.Point(132, 551);
-            this.button_save.Name = "button_save";
-            this.button_save.Size = new System.Drawing.Size(163, 85);
-            this.button_save.TabIndex = 20;
-            this.button_save.Text = "Sačuvaj";
-            this.button_save.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button_save.UseVisualStyleBackColor = true;
+            this.button_add.FlatAppearance.BorderSize = 0;
+            this.button_add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_add.Image = global::Hotel.Properties.Resources.icons8_save_40;
+            this.button_add.Location = new System.Drawing.Point(132, 551);
+            this.button_add.Name = "button_add";
+            this.button_add.Size = new System.Drawing.Size(163, 85);
+            this.button_add.TabIndex = 20;
+            this.button_add.Text = "Dodaj";
+            this.button_add.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.button_add.UseVisualStyleBackColor = true;
+            this.button_add.Click += new System.EventHandler(this.button_add_Click);
             // 
-            // textBox_lName
+            // textBox_phone
             // 
-            this.textBox_lName.Location = new System.Drawing.Point(258, 499);
-            this.textBox_lName.Name = "textBox_lName";
-            this.textBox_lName.Size = new System.Drawing.Size(141, 27);
-            this.textBox_lName.TabIndex = 32;
+            this.textBox_phone.Location = new System.Drawing.Point(258, 499);
+            this.textBox_phone.Name = "textBox_phone";
+            this.textBox_phone.Size = new System.Drawing.Size(141, 27);
+            this.textBox_phone.TabIndex = 32;
             // 
             // label7
             // 
@@ -203,6 +208,9 @@ namespace Hotel
             this.label7.Size = new System.Drawing.Size(33, 31);
             this.label7.TabIndex = 2;
             this.label7.Text = "X";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
+            this.label7.MouseEnter += new System.EventHandler(this.label7_MouseEnter);
+            this.label7.MouseLeave += new System.EventHandler(this.label7_MouseLeave);
             // 
             // panel1
             // 
@@ -277,35 +285,35 @@ namespace Hotel
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.radioButton2);
-            this.groupBox1.Controls.Add(this.radioButton1);
+            this.groupBox1.Controls.Add(this.radioButton_zauzeta);
+            this.groupBox1.Controls.Add(this.radioButton_slobodna);
             this.groupBox1.Location = new System.Drawing.Point(568, 436);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(167, 77);
             this.groupBox1.TabIndex = 37;
             this.groupBox1.TabStop = false;
             // 
-            // radioButton1
+            // radioButton_slobodna
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(6, 12);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(102, 25);
-            this.radioButton1.TabIndex = 0;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Slobodna";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton_slobodna.AutoSize = true;
+            this.radioButton_slobodna.Location = new System.Drawing.Point(6, 12);
+            this.radioButton_slobodna.Name = "radioButton_slobodna";
+            this.radioButton_slobodna.Size = new System.Drawing.Size(102, 25);
+            this.radioButton_slobodna.TabIndex = 0;
+            this.radioButton_slobodna.TabStop = true;
+            this.radioButton_slobodna.Text = "Slobodna";
+            this.radioButton_slobodna.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // radioButton_zauzeta
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(6, 43);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(92, 25);
-            this.radioButton2.TabIndex = 1;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Zauzeta";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButton_zauzeta.AutoSize = true;
+            this.radioButton_zauzeta.Location = new System.Drawing.Point(6, 43);
+            this.radioButton_zauzeta.Name = "radioButton_zauzeta";
+            this.radioButton_zauzeta.Size = new System.Drawing.Size(92, 25);
+            this.radioButton_zauzeta.TabIndex = 1;
+            this.radioButton_zauzeta.TabStop = true;
+            this.radioButton_zauzeta.Text = "Zauzeta";
+            this.radioButton_zauzeta.UseVisualStyleBackColor = true;
             // 
             // RoomForm
             // 
@@ -320,8 +328,8 @@ namespace Hotel
             this.Controls.Add(this.button_delete);
             this.Controls.Add(this.button_logout);
             this.Controls.Add(this.button_update);
-            this.Controls.Add(this.button_save);
-            this.Controls.Add(this.textBox_lName);
+            this.Controls.Add(this.button_add);
+            this.Controls.Add(this.textBox_phone);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -329,13 +337,13 @@ namespace Hotel
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox_id);
             this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.Name = "RoomForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "RoomForm";
             this.Load += new System.EventHandler(this.RoomForm_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_guest)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_room)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -348,14 +356,14 @@ namespace Hotel
 
         #endregion
 
-        private Guna.UI2.WinForms.Guna2DataGridView dataGridView_guest;
+        private Guna.UI2.WinForms.Guna2DataGridView dataGridView_room;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button button_clean;
         private System.Windows.Forms.Button button_delete;
         private System.Windows.Forms.Button button_logout;
         private System.Windows.Forms.Button button_update;
-        private System.Windows.Forms.Button button_save;
-        private System.Windows.Forms.TextBox textBox_lName;
+        private System.Windows.Forms.Button button_add;
+        private System.Windows.Forms.TextBox textBox_phone;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label6;
@@ -366,7 +374,7 @@ namespace Hotel
         private System.Windows.Forms.TextBox textBox_id;
         private System.Windows.Forms.ComboBox comboBox_roomType;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton radioButton_zauzeta;
+        private System.Windows.Forms.RadioButton radioButton_slobodna;
     }
 }

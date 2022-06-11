@@ -50,6 +50,14 @@ namespace Hotel
         {
             panel_slide.Height = button_room.Height;
             panel_slide.Top = button_room.Top;
+
+            panel_main.Controls.Clear();
+            RoomForm room = new RoomForm();
+            room.TopLevel = false;
+            room.Dock = DockStyle.Fill;
+            room.FormBorderStyle = FormBorderStyle.None;
+            panel_main.Controls.Add(room);
+            room.Show();
         }
 
         private void button_logout_Click(object sender, EventArgs e)
