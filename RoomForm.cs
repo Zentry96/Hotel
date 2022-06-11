@@ -12,9 +12,17 @@ namespace Hotel
 {
     public partial class RoomForm : Form
     {
+        RoomClass room = new RoomClass();
         public RoomForm()
         {
             InitializeComponent();
+        }
+
+        private void RoomForm_Load(object sender, EventArgs e)
+        {
+            comboBox_roomType.DataSource = room.getRoomType();
+            comboBox_roomType.DisplayMember = "RoomType";
+            comboBox_roomType.ValueMember = "CategoryID";
         }
     }
 }

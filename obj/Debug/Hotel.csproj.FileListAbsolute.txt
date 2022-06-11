@@ -26,3 +26,4 @@ C:\Users\llmil\Desktop\Hotel\Hotel\Hotel\bin\Debug\MySql.Data.xml
 C:\Users\llmil\Desktop\Hotel\Hotel\Hotel\obj\Debug\Hotel.exe.config
 C:\Users\llmil\Desktop\Hotel\Hotel\Hotel\obj\Debug\Hotel.MainForm.resources
 C:\Users\llmil\Desktop\Hotel\Hotel\Hotel\obj\Debug\Hotel.GuestForm.resources
+C:\Users\llmil\Desktop\Hotel\Hotel\Hotel\obj\Debug\Hotel.RoomForm.resources
