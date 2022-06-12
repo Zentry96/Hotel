@@ -110,7 +110,8 @@ namespace Hotel
             textBox_reservid.Text = dataGridView_reserv.CurrentRow.Cells[0].Value.ToString();
             textBox_guestid.Text = dataGridView_reserv.CurrentRow.Cells[1].Value.ToString();
             comboBox_roomID.SelectedValue = dataGridView_reserv.CurrentRow.Cells[2].Value.ToString();
-
+            dateTimePicker_dateIn.Text = dataGridView_reserv.CurrentRow.Cells[3].Value.ToString();
+            dateTimePicker_dateOut.Text = dataGridView_reserv.CurrentRow.Cells[4].Value.ToString();
 
         }
 
@@ -125,9 +126,10 @@ namespace Hotel
                 try
                 {
                     string id = textBox_reservid.Text;
+                    string roomid = comboBox_roomID.Text;
 
                     Boolean deleteReserv = reservation.removeReserv(Int32.Parse(id));
-                    if (deleteReserv)
+                    if (deleteReserv&&reservation.setReservRoom(roomid,"Slobodna"))
                     {
                         MessageBox.Show("Rezervacija obrisana iz baze", "Rezervacija obrisana", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         getReservTable();
@@ -179,5 +181,7 @@ namespace Hotel
                 MessageBox.Show(ex.Message);
             }
         }
+
+
     }
 }
