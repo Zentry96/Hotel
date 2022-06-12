@@ -199,9 +199,9 @@ namespace Hotel
             this.checkBox4.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.checkBox4.Location = new System.Drawing.Point(49, 484);
             this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(153, 25);
+            this.checkBox4.Size = new System.Drawing.Size(281, 25);
             this.checkBox4.TabIndex = 7;
-            this.checkBox4.Text = "Zameniti peškire";
+            this.checkBox4.Text = "Osmeh na lice i smisao za  humor";
             this.checkBox4.UseVisualStyleBackColor = true;
             // 
             // checkBox3
@@ -210,9 +210,9 @@ namespace Hotel
             this.checkBox3.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.checkBox3.Location = new System.Drawing.Point(49, 453);
             this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(146, 25);
+            this.checkBox3.Size = new System.Drawing.Size(384, 25);
             this.checkBox3.TabIndex = 6;
-            this.checkBox3.Text = "Presvući krevet";
+            this.checkBox3.Text = "Evidencija o gostima, sobama i rezervacijama";
             this.checkBox3.UseVisualStyleBackColor = true;
             // 
             // checkBox2
@@ -221,9 +221,9 @@ namespace Hotel
             this.checkBox2.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.checkBox2.Location = new System.Drawing.Point(49, 422);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(127, 25);
+            this.checkBox2.Size = new System.Drawing.Size(206, 25);
             this.checkBox2.TabIndex = 5;
-            this.checkBox2.Text = "Uslužiti goste";
+            this.checkBox2.Text = "Menadžment sobarica";
             this.checkBox2.UseVisualStyleBackColor = true;
             // 
             // label3
@@ -244,9 +244,9 @@ namespace Hotel
             this.checkBox1.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.checkBox1.Location = new System.Drawing.Point(49, 391);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(123, 25);
+            this.checkBox1.Size = new System.Drawing.Size(167, 25);
             this.checkBox1.TabIndex = 3;
-            this.checkBox1.Text = "Očistiti sobu";
+            this.checkBox1.Text = "Usluživanje gostiju";
             this.checkBox1.UseVisualStyleBackColor = false;
             // 
             // pictureBox2

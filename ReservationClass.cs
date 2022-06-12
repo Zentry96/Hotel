@@ -22,6 +22,16 @@ namespace Hotel
             adapter.Fill(table);
             return table;
         }
+        public int TypeByRoom(int roomid)
+        {
+            string selectQuery = "SELECT `RoomType` FROM `room` WHERE `RoomID`=@roomid";
+            MySqlCommand command = new MySqlCommand(selectQuery, connect.GetConnection());
+            command.Parameters.Add("@roomid", MySqlDbType.Int32).Value = roomid;
+            MySqlDataAdapter adapter = new MySqlDataAdapter(command);
+            DataTable table = new DataTable();
+            adapter.Fill(table);
+            return Convert.ToInt32(table.Rows[0][0].ToString());
+        }
         public bool setReservRoom(string roomid, string status)
         {
             string updateQuery = "UPDATE `room` SET `RoomStatus`=@status WHERE `RoomID`=@roomid";
