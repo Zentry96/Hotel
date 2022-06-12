@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Diagnostics;
 
 namespace Hotel
 {
@@ -57,7 +58,7 @@ namespace Hotel
                 DateTime datein = dateTimePicker_dateIn.Value;
                 DateTime dateout = dateTimePicker_dateOut.Value;
 
-                if (reservation.addReservation(guestid, roomid, datein, dateout))
+                if (reservation.addReservation(guestid, roomid, datein, dateout) && reservation.setReservRoom(roomid.ToString(),"Zauzeta"))
                 {
                     getReservTable();
                     MessageBox.Show("Rezervacija uspešno napravljena", "Dodavanje rezervacije", MessageBoxButtons.OK, MessageBoxIcon.Information);

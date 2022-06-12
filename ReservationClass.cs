@@ -22,13 +22,31 @@ namespace Hotel
             adapter.Fill(table);
             return table;
         }
+        public bool setReservRoom(string roomid, string status)
+        {
+            string updateQuery = "UPDATE `room` SET `RoomStatus`=@status WHERE `RoomID`=@roomid";
+            MySqlCommand command = new MySqlCommand(updateQuery, connect.GetConnection());
+            command.Parameters.Add("@roomid", MySqlDbType.VarChar).Value = roomid;
+            command.Parameters.Add("@status", MySqlDbType.VarChar).Value = status;
 
+            connect.OpenCon();
+            if (command.ExecuteNonQuery() == 1)
+            {
+                connect.CloseCon();
+                return true;
+            }
+            else
+            {
+                connect.CloseCon();
+                return false;
+            }
+        }
         public bool addReservation(int roomid, int guestid, DateTime datein, DateTime dateout)
         {
             string insertQuerry = "INSERT INTO `reservation`(`GuestID`, `RoomID`, `DateIn`, `DateOut`) VALUES (@guestID, @roomID, @datein, @dateout)";
             MySqlCommand command = new MySqlCommand(insertQuerry, connect.GetConnection());
-            command.Parameters.Add("@roomID", MySqlDbType.Int32).Value = guestid;
             command.Parameters.Add("@guestID", MySqlDbType.Int32).Value = roomid;
+            command.Parameters.Add("@roomID", MySqlDbType.Int32).Value = guestid;
             command.Parameters.Add("@datein", MySqlDbType.Date).Value = datein;
             command.Parameters.Add("@dateout", MySqlDbType.Date).Value = dateout;
 
