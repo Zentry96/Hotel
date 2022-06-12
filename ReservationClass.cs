@@ -96,7 +96,7 @@ namespace Hotel
 
         public bool editReserv(int reservationid, int guestid, int roomid, DateTime datein, DateTime dateout)
         {
-            string editQuerry = "UPDATE `reservation` SET `GuestID`=@guestid,`RoomID`=@roomid,`DateIn`=@datein,`DateOut`=@dateout WHERE `ReservationID`='@reservationid'";
+            string editQuerry = "UPDATE `reservation` SET `GuestID`=@guestid,`RoomID`=@roomid,`DateIn`=@datein,`DateOut`=@dateout WHERE `ReservationID`=@reservationid";
             MySqlCommand command = new MySqlCommand(editQuerry, connect.GetConnection());
             command.Parameters.Add("@reservationid", MySqlDbType.Int32).Value = reservationid;
             command.Parameters.Add("@guestid", MySqlDbType.Int32).Value = guestid;

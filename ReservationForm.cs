@@ -58,14 +58,25 @@ namespace Hotel
                 DateTime datein = dateTimePicker_dateIn.Value;
                 DateTime dateout = dateTimePicker_dateOut.Value;
 
-                if (reservation.addReservation(guestid, roomid, datein, dateout) && reservation.setReservRoom(roomid.ToString(),"Zauzeta"))
+                if (datein < DateTime.Today)
                 {
-                    getReservTable();
-                    MessageBox.Show("Rezervacija uspešno napravljena", "Dodavanje rezervacije", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Datum rezervacije mora početi najranije od danas", "Neispravan datum", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else if (dateout < datein)
+                {
+                    MessageBox.Show("Rok rezervacije mora biti na dan rezervacije ili kasnije", "Neispravan datum", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 else
                 {
-                    MessageBox.Show("Rezervacija nije uspela", "Problem pri rezervaciji", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    if (reservation.addReservation(guestid, roomid, datein, dateout) && reservation.setReservRoom(roomid.ToString(), "Zauzeta"))
+                    {
+                        getReservTable();
+                        MessageBox.Show("Rezervacija uspešno napravljena", "Dodavanje rezervacije", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Rezervacija nije uspela", "Problem pri rezervaciji", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 }
             }
             catch (Exception ex)
@@ -144,16 +155,15 @@ namespace Hotel
 
         private void button_update_Click(object sender, EventArgs e)
         {
-            //dateTimePicker1.Value.ToString("MM/dd/yyyy")
             int reservationid = Convert.ToInt32(textBox_reservid.Text);
-            int roomid = Convert.ToInt32(comboBox_roomID.SelectedValue.ToString());
             int guestid = Convert.ToInt32(textBox_guestid.Text);
-            DateTime datein = Convert.ToDateTime(dateTimePicker_dateIn);
-            DateTime dateout = Convert.ToDateTime(dateTimePicker_dateOut);
+            int roomid = Convert.ToInt32(comboBox_roomID.SelectedValue.ToString());
+            DateTime datein = dateTimePicker_dateIn.Value;
+            DateTime dateout = dateTimePicker_dateOut.Value;
 
             try
             {
-                if (reservation.editReserv(reservationid, roomid, guestid, datein, dateout))
+                if (reservation.editReserv(reservationid, guestid, roomid, datein, dateout))
                 {
                     MessageBox.Show("Rezervacija uspešno obnovljena", "Obnova podataka rezervacije", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     getReservTable();
